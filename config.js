@@ -1,5 +1,3 @@
-//console.log(Math.floor(Math.random()*10))
-
 function computerPlay(){
 
     const randomNumbers = (min, max) => {
@@ -27,5 +25,20 @@ while (player != 'rock' && player != 'paper' && player != 'scissors'){
     console.log(player)
 }
 console.log(player)
+console.log(computer)
 
-
+if (player==computer){
+    alert('Drawwwww maricaaaaaa')
+}
+else if(player=='rock' && computer=='scissors'){
+    alert('Ganasteeee, roca le gana a tijera')
+}
+else if(player=='paper' && computer=='rock'){
+    alert('Ganasteeee, papel le gana a roca')
+}
+else if (player=='scissors' && computer=='paper'){
+    alert('Ganasteeee, tijera le gana a papel')
+}
+else{
+    alert('Nooo marica perdiste, sos una mierda')
+}
